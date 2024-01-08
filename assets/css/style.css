@@ -1,0 +1,31 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    /* primary */
+    --blue: hsl(223, 87%, 63%);
+    /* secondary */
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-blue: hsl(354, 100%, 66%);
+    /* neutral */
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif; /* Weights: 300, 600, 700 */
+}
