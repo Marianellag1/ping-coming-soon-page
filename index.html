@@ -14,23 +14,28 @@
 
 <body>
   <section class="wrapper">
-    <img src="./images/logo.svg" alt="">
-    <div class="box">
-      <h1>We are launching <span>soon!</span></h1>
-      <p>Subscribe and get notified</p>
-      <form autocomplete="off">
-       <input type="email" name="email" id="email">
-       <button type="submit">Notify Me</button>
-      </form>
-      <img src="./images/illustration-dashboard.png" alt="chart img">
-      <div class="socials">
-        <img src="./images/facebook.png" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+    <div class="left">
+      <img class="logo" src="./images/logo.svg" alt="">
+      <div class="box">
+        <h1>We are launching <span>soon!</span></h1>
+        <p class="subscribe">Subscribe and get notified</p>
+        <form autocomplete="off" class="form-edit">
+          <div class="column">
+            <input type="email" name="email" id="email" placeholder="Your email address...">
+            <p class="error-msg">*Please provide a valid email address</p>
+          </div>
+          <button type="submit">Notify Me</button>
+        </form>
+        <img class="img-chart" src="./images/illustration-dashboard.png" alt="chart img">
+        <div class="socials">
+          <a href="https://www.facebook.com/" target="_blank"><img class="social-logo facebook" src="./images/facebook.png" alt=""></a>
+          <a href="https://twitter.com/?lang=en" target="_blank"><img class="social-logo twitter" src="./images/twitter.png" alt=""></a>
+          <a href="https://www.instagram.com/" target="_blank"><img class="social-logo instagram" src="./images/instagram.png" alt=""></a>
+        </div>
       </div>
-      <p class="Copyright">&copy; Copyright Ping. All rights reserved.</p>
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
     </div>
-
+    <!-- <div class="right"></div> -->
   </section>
   <footer>
     <p class="attribution footer">

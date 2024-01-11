@@ -12,10 +12,12 @@
     --blue: hsl(223, 86%, 63%);
     /* secondary */
     --pale-blue: hsl(223, 100%, 88%);
-    --light-blue: hsl(354, 100%, 66%);
+    --light-red: hsl(354, 100%, 66%);
     /* neutral */
     --gray: hsl(0, 0%, 59%);
     --very-dark-blue: hsl(209, 33%, 12%);
+    /* my color */
+    --white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -28,4 +30,157 @@ body {
     min-height: 100vh;
     font-size: 20px;
     font-family: 'Libre Franklin', sans-serif; /* Weights: 300, 600, 700 */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 3rem 0;
+}
+
+.wrapper .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+}
+
+.wrapper .left .logo {
+    width: 130px;
+    margin-bottom: 2rem;
+}
+
+.wrapper .left h1 {
+    font-weight: 300;
+    color: var(--gray);
+    font-size: 2.5rem;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.wrapper .left .subscribe {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+.wrapper .left .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .left span {
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+
+.wrapper .left .img-chart {
+    width: 550px;
+    margin-bottom: 6rem;
+}
+
+.wrapper .left input {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    border: solid 2px var(--pale-blue);
+    border-radius: 30px;
+    margin-bottom: 1rem;
+}
+
+::placeholder {
+    color: var(--pale-blue);
+}
+
+.wrapper .left .error-msg {
+    color: var(--light-red);
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    margin: .50rem 0 2rem 0;
+    display: none;
+}
+
+.wrapper .left button {
+    box-shadow: 0px 6px 7px var(--pale-blue);
+    padding: 1rem 0;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-bottom: 4rem;
+    cursor: pointer;
+}
+
+.wrapper .left .form-edit {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.wrapper .left .social-logo {
+    width: 50px;
+    padding: 0 .25rem;
+    margin-bottom: 2rem;
+}
+
+.wrapper .left .copyright {
+    color: var(--gray);
+}
+
+@media screen and (min-width: 768px) {
+
+    .wrapper .left {
+        width: 800px;
+    }
+
+    .wrapper .left .column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .wrapper .left .form-edit {
+        flex-direction: row;
+        /* width: 100%; */
+    }
+
+    .wrapper .left input {
+        margin-right: .25rem;
+        /* margin-bottom: 4rem; */
+        padding: none;
+        width: 100%;
+    }
+
+    .wrapper .left button {
+        margin-bottom: 8rem;
+        margin-left: .25rem;
+        padding: none;
+        width: 70%;
+    }
+
+    .wrapper .left .error-msg {
+        margin: 0;
+    }
+
+    .wrapper .left .img-chart {
+        width: 900px;
+    }
+
+    .wrapper .left .facebook:hover {
+        content: url(../../images/facebook\ \(1\).png);
+    }
+
+    .wrapper .left .twitter:hover {
+        content: url(../../images/twitter\ \(1\).png);
+    }
+
+    .wrapper .left .instagram:hover {
+        content: url(../../images/instagram\ \(1\).png);
+    }
+
 }
