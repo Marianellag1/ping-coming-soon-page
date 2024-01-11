@@ -93,6 +93,13 @@ body {
     color: var(--pale-blue);
 }
 
+.wrapper .left input:focus {
+    outline-offset: -1px;
+    outline-color: var(--pale-blue);
+    /* display: none; */
+    /* border: solid 1px var(--pale-blue); */
+}
+
 .wrapper .left .error-msg {
     color: var(--light-red);
     font-style: italic;
@@ -171,6 +178,7 @@ body {
         width: 900px;
     }
 
+    /* logos will be changed when hovered */
     .wrapper .left .facebook:hover {
         content: url(../../images/facebook\ \(1\).png);
     }
